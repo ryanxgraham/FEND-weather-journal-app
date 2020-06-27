@@ -35,3 +35,13 @@ const postData = async (path, data ={}) => {
     body: JSON.stringify(data)
   })
 }
+
+//update ui function
+
+const update = async () => {
+  const res = await fetch(getURL)
+  const jsonRes = await res.json()
+  dateHolder.innerHTML= `Date:${jsonRes.date}`
+  contentHolder.innerHTML= `You felt: ${jsonRes.userResponse}`
+  tempHolder.innerHTML=`Temp: ${jsonRes.temperature}`
+}
