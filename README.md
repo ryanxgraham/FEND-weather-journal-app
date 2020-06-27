@@ -3,7 +3,7 @@
 ## Overview
 For this project requires I created an asynchronous web app that uses Web API and user data to dynamically update the UI.
 
-##To Run
+## To Run
 
 Clone this repo with
 ```
