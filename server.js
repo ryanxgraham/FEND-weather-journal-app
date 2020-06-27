@@ -26,13 +26,14 @@ function listening(){
 };
 
 // GET route
-app.get('all', (req, res) => {
+app.get('/all', (req, res) => {
   res.send(JSON.stringify(projectData))
 })
-
-app.post('/', (req, res) => {
-  projectData.temperature = req.body.temperature
-  projectData.date = req.body.date
-  projectData.userResponse = req.body.userResponse
-  res.end()
+//POST route
+app.post('/add', (req, res) => {
+  projectData['date'] = req.body.date;
+  projectData['temp'] = req.body.temp;
+  projectData['content'] = req.body.content;
+  res.send(projectData);
 })
+console.log(projectData)
