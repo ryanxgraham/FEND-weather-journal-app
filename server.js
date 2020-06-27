@@ -24,3 +24,26 @@ const server = app.listen(port, listening);
     // console.log(server);
     console.log(`running on localhost: ${port}`);
   };
+
+// GET route
+app.get('/all', sendData);
+
+function sendData (request, response) {
+response.send(projectData);
+};
+
+// POST route
+app.post('/add', callBack);
+
+function callBack(req,res){
+res.send('POST received');
+};
+
+// POST an entry
+const data = [];
+
+app.post('/entry', addEntry);
+
+function addEntry (req,res){
+  data.push(req.body);
+};
