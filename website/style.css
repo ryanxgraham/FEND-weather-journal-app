@@ -1,5 +1,5 @@
 body{
-    background: #fffff8;
+    background: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -8,16 +8,16 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
-    color: #f0d43a;
+    background: #3b4a6b;
+    color: #000;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: .1rem;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
 
 .holder{
-
+  margin: 1rem;
 }
 
 .entry{
@@ -41,6 +41,9 @@ body{
 }
 
 .headline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 
 }
 .title{
@@ -57,32 +60,45 @@ input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    background:#2f7ea3;
+    color: #000000;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
+    border-radius: 1rem;
+    padding: .5rem;
 }
 
 button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
-    font-size: 26px;
+    width: 100px;
+    height: 60px;
+
+    background: #365F81;
+    color: #000000;
+    font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    margin: .5rem;
+    border-radius: 1rem
 }
+button:hover{
+  background:#2f7ea3;
+}
+
 h1{
     font-size: 36px;
 }
 
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
+    width: auto;
+    height: auto;
+    background:#2f7ea3;
+    color: #000;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    border-radius: 1rem;
+    padding: .5rem;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -92,20 +108,20 @@ button:focus {
     outline: none;
 }
 /* Style for Placeholder Text*/
-::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
+::placeholder { /* Firefox, Chrome, Opera */
+    color: #222;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #222;
     font-family: 'Oswald', sans-serif;
 
-} 
-  
-::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #222;
     font-family: 'Oswald', sans-serif;
 
-} 
+}
