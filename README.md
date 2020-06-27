@@ -1,10 +1,27 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+For this project requires I created an asynchronous web app that uses Web API and user data to dynamically update the UI.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+##To Run
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+Clone this repo with
+```
+ git clone git@github.com:ryanxgraham/FEND-weather-journal-app.git
+```
+Navigate to the root folder:
+```
+cd FEND-weather-journal-app
+```
+Run the following:
+```
+node server.js
+```
+Open your preferred web browser and navigate to:
+```
+http://localhost:3000/
+```
+## Contributions
+
+Starter code provided by Udacity, Functionality implemented by
+* Ryan Graham - [Github](https://github.com/ryanxgraham)
